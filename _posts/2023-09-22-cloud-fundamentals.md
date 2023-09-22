@@ -6,8 +6,6 @@ tags: [cloud]
 mermaid: true
 ---
 
-# Cloud Fundamentals
-
 ## The Cloud Computing
 
 Cloud computing is the *on-demand delivery* of compute power, database, storage, applications, and other IT resources through a cloud services platform via the internet with *pay-as-you-go pricing*. With cloud computing, you don’t need to make large upfront *investments in hardware* and spend a lot of time on the heavy lifting of *managing that hardware*. Instead, you can provision exactly the *right type and size* of computing resources you need to power your newest bright idea or operate your IT department. You can access as many resources as you need, almost *instantly*, and only *pay for what you use*. The cloud services platform provides *rapid access to flexible and low-cost* IT resources.
