@@ -10,7 +10,7 @@ There's been a lot of talk about cloud computing lately, but what is cloud compu
 
 Cloud computing is the *on-demand delivery* of compute power, database, storage, applications, and other IT resources through a cloud services platform via the Internet with *pay-as-you-go pricing*. With cloud computing, you don’t need to make significant upfront *investments in hardware* and spend a lot of time on the heavy lifting of *managing that hardware*. Instead, you can provision exactly the *right type and size* of computing resources you need to power your newest idea or operate your IT department. You can access as many resources as you need almost *instantly*, and only *pay for what you use*. The cloud services platform provides *rapid access to flexible and low-cost* IT resources.
 
-***When we talk about cloud computing, we must master some terms that will help us better understand this matter.
+When we talk about cloud computing, we must master some terms that will help us better understand this matter.
 
 - **High availability:** is a quality of cloud computing that allows us to keep our services available most of the time. In this way, the systems are designed to operate continuously without failures for a long time, which avoids the loss of these services by reducing or managing failures.
 
