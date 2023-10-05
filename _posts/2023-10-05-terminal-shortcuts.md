@@ -1,6 +1,6 @@
 ---
 title: Essential Terminal Shortcuts
-date: 2023-10-01 -0300
+date: 2023-10-05 -0300
 categories: [Tutorials, Linux]
 tags: [linux-terminal, linux]
 mermaid: true
