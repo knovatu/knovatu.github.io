@@ -6,11 +6,11 @@ tags: [linux-terminal, linux]
 mermaid: true
 ---
 
-If you are a Linux user and you also like to use the terminal, this terminal shortcuts will be very useful for your daily tasks.
+If you are a Linux user,and you also like to use the terminal, this terminal shortcuts will be very useful for your daily tasks.
 
-### Ctrl + A (Move to the start of the line)
+## Ctrl + A (Move to the start of the line)
 
-When you press the `Ctrl + a`, it will shift the cursor to the beginning of the line which can be really helpful when you write a long command and want to make changes at the beginning of the line.
+When you press the `Ctrl + a`, it will shift the cursor to the beginning of the line, which can be really helpful when you write a long command and want to make changes at the beginning of the line.
 
 ### Ctrl + E (Move to the end of the line)
 
