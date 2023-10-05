@@ -6,11 +6,11 @@ tags: [linux-terminal, linux]
 mermaid: true
 ---
 
-If you are a Linux user,and you also like to use the terminal, this terminal shortcuts will be very useful for your daily tasks.
+If you are a Linux user, and you also like to use the terminal, these terminal shortcuts will be very useful for your daily tasks.
 
-## Ctrl + A (Move to the start of the line)
+### Ctrl + A (Move to the start of the line)
 
-When you press the `Ctrl + a`, it will shift the cursor to the beginning of the line, which can be really helpful when you write a long command and want to make changes at the beginning of the line.
+When you press the `Ctrl + a`, it will shift the cursor to the beginning of the line, which can be helpful when you write a long command and want to make changes at the beginning of the line.
 
 ### Ctrl + E (Move to the end of the line)
 
@@ -18,15 +18,15 @@ When you press the `Ctrl + e`, it will shift the cursor to the end of the line.
 
 ### Ctrl + U (Delete from the cursor to the start of the line)
 
-Sometimes, you want to remove everything from the cursor position to the beginning of the line (everything from the cursor position to the left-hand side). With the command `Ctrl + u`, you can do this job.
+Sometimes, you want to remove everything from the cursor position to the beginning of the line (everything from the cursor position to the left-hand side). You can do this job with the command `Ctrl + u`.
 
 ### Ctrl + K (Delete from the cursor to the end of the line)
 
-Contrary to the previous command, `Ctrl + k` remove everything from the cursor position to the end of the line.
+Contrary to the previous command, `Ctrl + k` removes everything from the cursor position to the end of the line.
 
 ### Ctrl + W (Delete the word before the cursor)
 
-The two commands above remove everything from the cursor position to the beginning (left) or end (right) of the line. This command `Ctrl + w` remove a single word before the cursor.
+The two commands above remove everything from the cursor position to the beginning (left) or end (right) of the line. This command `Ctrl + w` removes a single word before the cursor.
 
 ### Ctrl + D (Log out or exit the terminal)
 
