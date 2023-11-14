@@ -79,5 +79,5 @@ If you are a **Windows** user, follow these instructions: [Link Here](https://je
 Finally, you must run this command at the root of the project.
 
 ```sh
-bundle exec jekyll s
+bundle exec jekyll serve
 ```
