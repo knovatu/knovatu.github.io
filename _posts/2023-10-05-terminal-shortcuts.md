@@ -1,5 +1,6 @@
 ---
 title: Essential Terminal Shortcuts
+author: adejonghm
 date: 2023-10-05 -0300
 categories: [Tutorials, Linux]
 tags: [linux-terminal, linux]

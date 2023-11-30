@@ -1,3 +1,4 @@
+
 ## Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
 #
 # -------------------------------------
@@ -12,6 +13,8 @@ adejonghm:
   name: Alejandro de Jongh
   twitter: adejonghm
   url: https://linkedin.com/in/adejonghm
+  url: https://github.com/adejonghm
+
 
 grucci:
   name: Felipe Grucci

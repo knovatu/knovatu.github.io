@@ -1,5 +1,6 @@
 ---
 title: DNS error in Windows Subsystem Linux (WSL)
+author: adejonghm
 date: 2023-09-01 22:00:00 -0300
 categories: [Tutorials, Windows]
 tags: [wsl, dns, windows]

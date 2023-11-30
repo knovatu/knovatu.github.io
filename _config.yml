@@ -30,19 +30,19 @@ github:
   username: adejonghm
 
 social:
-  name: Alejandro de Jongh
+  name: Unknown
   email: dejongh.morell@gmail.com
-  links:
-    - https://www.linkedin.com/in/adejonghm
-    - https://github.com/adejonghm
+  # links:
+  #   - https://www.linkedin.com/in/adejonghm
+  #   - https://github.com/adejonghm
 
-google_site_verification: # fill in to your verification string
+# google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: # fill in your Google Analytics ID
+# google_analytics:
+#   id: # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -55,14 +55,14 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light|dark]
+theme_mode: dark
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+# img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://lh3.googleusercontent.com/a/AAcHTtdfj6XimM7OmFSHsG7wMslwh7Qqq0X3qOQz1bZWhft-Bw=s260-c-no
@@ -129,6 +129,7 @@ defaults:
       type: posts
     values:
       layout: post
+      seo_description_max_words: 200
       comments: true # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
