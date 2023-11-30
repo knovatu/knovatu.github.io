@@ -1,78 +1,76 @@
 ---
 title: Terraform Fundamentals (part. 1)
-date: 2023-11-27 -0300
+date: 2023-11-30 -0300
 categories: [IaC, Terraform, Fundamentals]
 tags: [iac, terraform, fundamentals]
 mermaid: true
 ---
 
 ## Terraform, what's this?
+Terraform is an Infrastructure as Code (IaC) tool created by Hashicorp, which allow for the automated and consistent creation, management, and provisioning of cloud and on-premises infrastructure resources.
 
-Terraform é uma ferramenta de infraestrutura como código (IaC) criada pela Hashicorp, que permite criar, gerenciar e provisionar recursos de infraestrutura cloud ou on-premises de maneira automatizada e consistente.
+It is a declarative programming tool that utilizes a high-level language called HCL (Hashicorp Configuration Language) and can manage both low-level components (ex:. storage) and high-level components (ex:. SaaS).
 
-Uma ferramenta para programação declarativa que usa uma linguagem de alto nível chamada HCL (Hashicorp Configuration Language) e pode gerenciar tanto componentes de baixo nível (ex:. storage), quanto componentes de alto nível (ex:. SaaS).
+## Key features of Terraform
+* No need to install an application other than the Terraform binary.
+* Terraform files have the .tf extension.
+* Plugins are downloaded after Terraform initialization into the .terraform folder, based on the configurations.
+* Stores all states of infrastructure provisioning, and any modifications are recorded when applying Terraform code.
 
-## Principais caracteristicas do Terraform
 
-* Não há necessidade de instalar uma aplicação, além do binário do Terraform
-* Os arquivos do terraform possuem a extensão .tf
-* Os plugins são baixados depois da inicialização do Terraform na pasta .terraform, de acordo com as configurações
-* Armazena todos os estados do provisionamento da infraestrutura e qualquer modificação que seja sinalizada ao aplicar os códigos em Terraform 
+## Composition of the Terraform Architecture
+Terraform Core analyzes configurations and establishes dependencies between resources.
 
-## Composição da arquitetura Terraform
+Terraform Providers act as intermediaries between Terraform Core and the corresponding APIs.
 
-O Terraform Core analisa as configurações e estabelece as dependências entre os recursos.
-
-Os Providers do Terraform servem como intermediários entre o Terraform Core e as APIs correspondentes.
-
-## Componentes do Terraform
+## Terraform Components
 ### *Backend*
-O backend é uma configuração do Terraform que indica onde o statefile será armazenado
+The backend is a Terraform configuration that specifies where the state file will be stored.
 
-Existem maneiras de armazenar o state file, e a escolha vai depender das necessidades e requisitos do projeto.
+There are various ways to store the state file, and the choice depends on the project's needs and requirements.
 
-Local (padrão): O estado é armazenado localmente no sistema de arquivos do computador em que o Terraform está sendo executado. No entanto, isso não é recomendado para ambientes de produção ou colaborativos, pois pode levar a problemas de sincronização e segurança.
+Local (default): The state is stored locally on the file system of the computer where Terraform is being executed. However, this is not recommended for production or collaborative environments as it may lead to synchronization and security issues.
 
-Remoto: O estado pode ser armazenado remotamente em um backend, como Amazon S3, Azure Storage, Google Cloud Storage, ou outros. Isso é altamente recomendado para ambientes de produção e equipes colaborativas, pois oferece benefícios como controle de acesso mais granular, capacidade de trabalho colaborativo e maior segurança.
+Remote: The state can be stored remotely in a backend such as Amazon S3, Azure Storage, Google Cloud Storage, or others. This is highly recommended for production environments and collaborative teams as it offers benefits such as more granular access control, collaborative work capability, and increased security.
 
-Exemplo de configuração do backend: 
+Example backend configuration:
 
 ```terraform
 1 terraform {
 2   backend "s3" {
-3     bucket         = "nome-do-seu-bucket-s3"
-4     key            = "caminho/para/o/arquivo/terraform.tfstate"
-5     region         = "regiao-aws"
+3     bucket         = "s3-bucket-name"
+4     key            = "path/to/terraform.tfstate"
+5     region         = "region-aws"
 6     encrypt        = true
 7   }
 8 }
 ```
 
 ### *State File*
-O estado do Terraform refere-se a um arquivo que rastreia as informações sobre os recursos provisionados, suas configurações e dependências entre eles. Esse arquivo de estado é fundamental para o Terraform entender o estado atual da infraestrutura e determinar quais alterações são necessárias para atingir o estado desejado.
+The Terraform state refers to a file that tracks information about provisioned resources, their configurations, and dependencies between them. This state file is crucial for Terraform to understand the current state of the infrastructure and determine what changes are necessary to achieve the desired state.
 
-O statefile é essencial para o Terraform por várias finalidades:
+The state file serves several purposes for Terraform:
 
-Rastreamento de Recursos: O statefile mantém um registro de todos os recursos provisionados pelo Terraform. Ele armazena identificadores únicos, configurações e metadados associados a cada recurso.
+Resource Tracking: The state file keeps a record of all resources provisioned by Terraform. It stores unique identifiers, configurations, and metadata associated with each resource.
 
-Controle de Dependências: O statefile registra as dependências entre os recursos. Isso é crucial para garantir que os recursos sejam criados ou modificados na ordem correta, evitando problemas de dependência.
+Dependency Control: The state file records dependencies between resources. This is crucial to ensure that resources are created or modified in the correct order, avoiding dependency issues.
 
-Concorrência e Bloqueio: O statefile é usado para coordenar operações simultâneas de várias instâncias do Terraform. Ele fornece um mecanismo de bloqueio para garantir que apenas uma instância do Terraform por vez possa modificar o estado.
+Concurrency and Locking: The state file is used to coordinate concurrent operations from multiple instances of Terraform. It provides a locking mechanism to ensure that only one instance of Terraform at a time can modify the state.
 
-O importante é garantir que o estado seja gerenciado adequadamente para evitar conflitos e garantir a integridade da infraestrutura gerenciada pelo Terraform.
+It is essential to manage the state properly to avoid conflicts and ensure the integrity of the infrastructure managed by Terraform.
 
-Exemplo de um statefile:
+Example of a state file:
 
 ![statefile-example](../assets/img/articles/terraform-fundamentals/statefile.png)
 
 ### *Provider*
-Terraform Providers são plugins utilizados para interagir e se conectar com um provedor de serviços ou recursos, como provedores de nuvem, provedores de armazenamento, provedores de rede, entre outros. Funcionam como pontes entre o Terraform Core e a API do serviço ou recurso que será provisionado ou gerenciado. Cada provedor é responsável por traduzir as instruções na configuração do Terraform para chamadas apropriadas na API do provedor subjacente.
+Terraform Providers are plugins used to interact and connect with a service or resource provider, such as cloud providers, storage providers, network providers, and others. They act as bridges between the Terraform Core and the API of the service or resource to be provisioned or managed. Each provider is responsible for translating instructions in the Terraform configuration into appropriate calls to the underlying provider's API.
 
-Alguns Providers necessitam de configurações antes de usá-los. (Ex.: credentials, cloud region, endpoint URL, etc).
+Some Providers require configurations before using them (credentials, cloud region, endpoint URL, etc.).
 
 ![terraformcore-provider](../assets/img/articles/terraform-fundamentals/terraformcore-api.png)
 
-Por exemplo, se você estiver usando o Terraform para provisionar recursos na Amazon Web Services (AWS), você precisará do provider AWS. Da mesma forma, se estiver trabalhando com o Microsoft Azure, precisará do provider Azure. Cada provedor possui seus próprios recursos específicos e parâmetros que podem ser configurados no arquivo de configuração do Terraform.
+For example, if you are using Terraform to provision resources on Amazon Web Services (AWS), you will need the AWS provider. Similarly, if you are working with Microsoft Azure, you will need the Azure provider. Each provider has its own specific resources and parameters that can be configured in the Terraform configuration file.
 
 ```hcl
 1  provider “aws” {
@@ -80,6 +78,6 @@ Por exemplo, se você estiver usando o Terraform para provisionar recursos na Am
 3  }
 ```
 
-A estrutura modular do Terraform permite que os usuários escolham e incorporem provedores específicos conforme necessário para atender aos requisitos da infraestrutura que estão criando. Essa abordagem permite uma ampla gama de flexibilidade e suporte para diferentes ambientes e serviços de infraestrutura.
+The modular structure of Terraform allows users to choose and incorporate specific providers as needed to meet the requirements of the infrastructure they are creating. This approach provides a wide range of flexibility and support for different environments and infrastructure services.
 
 ![provider](../assets/img/articles/terraform-fundamentals/providers.png)
