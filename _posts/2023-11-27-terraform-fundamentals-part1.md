@@ -79,7 +79,7 @@ Some Providers require configurations before using them (credentials, cloud regi
 
 For example, if you are using Terraform to provision resources on Amazon Web Services (AWS), you will need the AWS provider. Similarly, if you are working with Microsoft Azure, you will need the Azure provider. Each provider has its own specific resources and parameters that can be configured in the Terraform configuration file.
 
-```hcl
+```terraform
 1  provider “aws” {
 2    region = “us-east-1”
 3  }

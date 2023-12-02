@@ -27,14 +27,14 @@ description: >- # used by seo meta and the atom feed
 url: "https://adejonghm.github.io/"
 
 github:
-  username: adejonghm
+  username: adejonghm/adejonghm.github.io
 
 social:
   name: Unknown
-  email: dejongh.morell@gmail.com
+  # email:
   # links:
-  #   - https://www.linkedin.com/in/adejonghm
-  #   - https://github.com/adejonghm
+  #   - https://www.linkedin.com/in/username
+  #   - https://github.com/username
 
 # google_site_verification: # fill in to your verification string
 
@@ -44,18 +44,13 @@ social:
 # google_analytics:
 #   id: # fill in your Google Analytics ID
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
+# Keep empty will follow the system color scheme, and you can toggle
+# between dark and light with the switch at the bottom left of the sidebar.
 # Available options:
-#
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark
+theme_mode:
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -72,33 +67,33 @@ avatar: https://lh3.googleusercontent.com/a/AAcHTtdfj6XimM7OmFSHsG7wMslwh7Qqq0X3
 # 
 toc: true
 
-comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
-  # The active options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+# comments:
+#   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+#   # The active options are as follows:
+#   disqus:
+#     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+#   # utterances settings › https://utteranc.es/
+#   utterances:
+#     repo: # <gh-username>/<repo>
+#     issue_term: # < url | pathname | title | ...>
+#   # Giscus options › https://giscus.app
+#   giscus:
+#     repo: # <gh-username>/<repo>
+#     repo_id:
+#     category:
+#     category_id:
+#     mapping: # optional, default to 'pathname'
+#     input_position: # optional, default to 'bottom'
+#     lang: # optional, default to the value of `site.lang`
+#     reactions_enabled: # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development|production]
+# assets:
+#   self_host:
+#     enabled: # boolean, keep empty means false
+#     # specify the Jekyll environment, empty means both
+#     # only works if `assets.self_host.enabled` is 'true'
+#     env: # [development|production]
 
 pwa:
   enabled: true # the option for PWA feature
