@@ -1,8 +1,8 @@
-# AJ Tech
+# Byte Maze
 
 ## How to can contribute
 
-This is the official repository of [AJ Tech](https://adejonghm.github.io), a website created with the idea of sharing content about technologies, whether about programming languages, software, technologies, cultures, tips, or any other topic related to the world of technology.
+This is the official repository of [Byte Maze](https://bytemaze.github.io/), a website created with the idea of sharing content about technologies, whether about programming languages, software, technologies, cultures, tips, or any other topic related to the world of technology.
 
 I've always been a fan of collaborative work, so if you feel like contributing some technology-related content, choosing a topic, and developing your idea, you're always welcome here.
 
@@ -72,7 +72,13 @@ Finally, install Jekyll and Bundler:
 gem install jekyll bundler
 ```
 
-If you are a **Windows** user, follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/windows/)
+### MacOs
+
+Please follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/macos/)
+
+### Windows
+
+Please follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/windows/)
 
 ### Running locally
 
