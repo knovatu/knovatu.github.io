@@ -6,13 +6,14 @@ This is the official repository of [Byte Maze](https://bytemaze.github.io/), a w
 
 I've always been a fan of collaborative work, so if you feel like contributing some technology-related content, choosing a topic, and developing your idea, you're always welcome here.
 
-**AJ Tech** is a static website built with [Jekyll](https://jekyllrb.com/). All content is generated using [Markdown](https://www.markdownguide.org/). To learn more about this lightweight markup language, you can use this [link](https://daringfireball.net/projects/markdown/syntax#blockquote). So, if you dare to collaborate with this project, you must follow these steps:
+**Byte Maze** is a static website built with [Jekyll](https://jekyllrb.com/). All content is generated using [Markdown](https://www.markdownguide.org/). To learn more about this lightweight markup language, you can use this [link](https://daringfireball.net/projects/markdown/syntax#blockquote). So, if you dare to collaborate with this project, you must follow these steps:
 
 > ATTENTION: All content on this website must be written in English. Texts written in another language will not be accepted.
 
 1. To start, you have to create a new branch from the main branch, with the following name: `doc/document-name`
-2. You have to create a new markdown file inside the `_posts` folder with the following name: `<publication-date>-<short-name>.md`, and write your article. Learn how to work with this [Jekyll Template](https://chirpy.cotes.page/).
-3. After writing your article, you must submit it through a *Pull Request* to be reviewed and approved.
+2. Add you personal information in the `data/authors.yml` file.
+3. Create a new markdown file inside the `_posts/` folder with the following name: `<publication-date>-<short-name>.md`, and write your article. Learn how to work with this [Jekyll Template](https://chirpy.cotes.page/).
+4. After writing your article, you must submit it through a *Pull Request* to be reviewed and approved.
 
 ### Complete Workflow
 
@@ -45,7 +46,7 @@ The idea of running the website locally is to test your changes without affectin
 
 To test your changes locally, you must have these packages installed.
 
-- **Ruby** version 2.5.0 or higher, including all development headers (check your Ruby version using `ruby -v`)
+- **Ruby** version 2.7.0 or higher, including all development headers (check your Ruby version using `ruby -v`)
 - **RubyGems** (check your Gems version using `gem -v`)
 - **GCC** and **Make** (check versions using `gcc -v`, `g++ -v`, and `make -v`)
 
