@@ -16,56 +16,53 @@ timezone: America/Sao_Paulo
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: AJ Tech
-
+title: Byte Maze
+url: "https://bytemaze.github.io/"
 tagline: ...a blog about IT
 
 description: >- # used by seo meta and the atom feed
-  blog, cloud, devops, git, linux, adejonghm
-
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://adejonghm.github.io/"
+  blog, cloud, devops, git, linux, iac, automation 
 
 github:
-  username: adejonghm/adejonghm.github.io
+  username: bytemaze/bytemaze.github.io
 
 social:
-  name: Unknown
-  # email:
-  # links:
+  name: Byte Maze
+  email: itsbytemaze@gmail.com
+  links:
+    - https://github.com/bytemaze/bytemaze.github.io
   #   - https://www.linkedin.com/in/username
-  #   - https://github.com/username
 
 # google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-# google_analytics:
-#   id: # fill in your Google Analytics ID
 
+theme_mode:
 # Keep empty will follow the system color scheme, and you can toggle
 # between dark and light with the switch at the bottom left of the sidebar.
 # Available options:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
-#
-theme_mode:
 
+
+# img_cdn:
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# img_cdn:
 
+
+avatar:
 # the avatar on sidebar, support local or CORS resources
-avatar: https://lh3.googleusercontent.com/a/AAcHTtdfj6XimM7OmFSHsG7wMslwh7Qqq0X3qOQz1bZWhft-Bw=s260-c-no
 
+
+toc: true
 # Show the Table of Contents (TOC) on the right panel of the post. This is the global configuration.
 # If you want to turn off TOC for a specific post, add the toc: variable in the Front Matter block.
-# 
-toc: true
+
 
 # comments:
 #   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
@@ -87,13 +84,6 @@ toc: true
 #     lang: # optional, default to the value of `site.lang`
 #     reactions_enabled: # optional, default to the value of `1`
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-# assets:
-#   self_host:
-#     enabled: # boolean, keep empty means false
-#     # specify the Jekyll environment, empty means both
-#     # only works if `assets.self_host.enabled` is 'true'
-#     env: # [development|production]
 
 pwa:
   enabled: true # the option for PWA feature
