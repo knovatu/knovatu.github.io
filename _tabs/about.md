@@ -18,7 +18,7 @@ Computer engineer with ten years of experience, lover of web development who dec
 
 These are some of the achievements in these almost three years of career as DevOps:
 
-| ![azure-fundamentals](../assets/img/about/azure-fundamentals.webp) | ![aws-practitioner](../assets/img/about/aws-practitioner.webp) | ![sre-foundation](../assets/img/about/sre-foundation.webp) | ![docker](../assets/img/about/docker-badge.webp)
+<!-- | ![azure-fundamentals](../assets/img/about/azure-fundamentals.webp) | ![aws-practitioner](../assets/img/about/aws-practitioner.webp) | ![sre-foundation](../assets/img/about/sre-foundation.webp) | ![docker](../assets/img/about/docker-badge.webp) -->
 
 In my free time, I like to share good times with my friends riding a bicycle, I do physical exercises to stay healthy, and I am also an amateur dancer.
 
