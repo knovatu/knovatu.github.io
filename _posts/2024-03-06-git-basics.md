@@ -22,10 +22,18 @@ Due to Git's distributed nature and branching system, it is possible to implemen
 
 ## Initial configurations
 
+After learning a little about the history of Git, it's time to start understanding how it works. To do this, first of all, we must install Git on our operating system.
+
+In this article, we do not cover installing Git. Therefore, we provide you with the official documentation to do so.
+
 ## Connection to remote repositories
 
 ## Basic Commands
 
 ## Terminology
 
-- Branch: ...
+- Branch:
+
+- Commit: Um commit é uma operação no Git que registra uma alteração feita nos arquivos do projeto. Cada commit tem uma mensagem associada que descreve as alterações realizadas.
+
+- Repositório: Um repositório Git é onde todo o histórico de um projeto é armazenado. Ele contém todas as versões dos arquivos, bem como as informações sobre quem fez as alterações e quando.
