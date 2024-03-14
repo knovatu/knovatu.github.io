@@ -5,11 +5,13 @@ img_path: /assets/img/about/
 order: 4
 ---
 
-Byte Maze is a non-profit website, created by a group of friends, to share our knowledge on various topics in the IT world.
+Byte Maze is a non-profit website, created in September 2023 by a group of friends, to share our knowledge on topics related to the IT world.
 
-The idea emerged in September 2023. Its main objective is to create a community, without borders, that encourages the exchange of knowledge, whether concepts or foundations, practical laboratories, study tips, work experiences, and topics related to certification processes.
+Its main objective is to create a community, without borders, that encourages the exchange of knowledge, whether concepts or fundamentals, programming languages, technologies, cultures, practical laboratories for study, work experiences, and other topics related to IT world.
 
 ## How to contribute?
+
+If you would like to contribute to our community, you can visit your [Organization](https://github.com/bytemaze) on Github, specifically this [repository](https://github.com/bytemaze/bytemaze.github.io), for more details.
 
 ## Our Team
 
