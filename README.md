@@ -59,10 +59,6 @@ To test your changes locally, you must have these packages installed.
 
 If you don't have these packages installed or the versions are not as recommended, please update your packages or install them following these instructions:
 
-### MacOs
-
-Please follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/macos/)
-
 ### Ubuntu
 
 ```sh
@@ -83,6 +79,10 @@ Finally, install Jekyll and Bundler:
 ```sh
 gem install jekyll bundler
 ```
+
+### MacOs
+
+Please follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/macos/)
 
 ### Windows
 
