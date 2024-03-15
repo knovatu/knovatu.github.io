@@ -1,11 +1,10 @@
 ---
-title: Git Basic Commands
+title: Git Basics
 author: adejonghm
 date: 2024-03-06 -0300
 img_path: /assets/img/articles/git-basic-commands/
-categories: [Git, Fundamentals, Basic-Commands]
+categories: [Git, Basics]
 tags: [git, fundamentals, devops]
-mermaid: true
 ---
 
 In my previous job, I had the opportunity to work with people of different profiles and, although I was within a consulting company, I could notice that many people did not know what Git is, what it is for, or how to use it. For this reason, I have decided to write about this topic, in an attempt to help those who still do not know what Git is and how to use it.
@@ -22,18 +21,17 @@ Due to Git's distributed nature and branching system, it is possible to implemen
 
 ## Initial configurations
 
-After learning a little about the history of Git, it's time to start understanding how it works. To do this, first of all, we must install Git on our operating system.
+After learning a bit about the history of Git, it's time to start understanding how it works. To do that we need to install Git on our operating system. In this article, we will not cover this installation. Instead, we provide you with the [Official Documentation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) so you can install it regardless of which OS you use: Linux, Windows, or MacOS.
 
-In this article, we do not cover installing Git. Therefore, we provide you with the official documentation to do so.
+The first command to know is:
+
+```bash
+git init
+```
+{: .nolineno }
+
+Before creating your first repository, there are some configurations you need to do.
 
 ## Connection to remote repositories
 
 ## Basic Commands
-
-## Terminology
-
-- Branch:
-
-- Commit: Um commit é uma operação no Git que registra uma alteração feita nos arquivos do projeto. Cada commit tem uma mensagem associada que descreve as alterações realizadas.
-
-- Repositório: Um repositório Git é onde todo o histórico de um projeto é armazenado. Ele contém todas as versões dos arquivos, bem como as informações sobre quem fez as alterações e quando.
