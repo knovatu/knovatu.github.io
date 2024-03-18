@@ -15,6 +15,6 @@ If you would like to contribute to our community, you can visit your [Organizati
 
 ## Our Team
 
-| ![adejonghm-profile](adejonghm-profile.png){: width="150" height="150"} | <!-- Your circular profile picture --> | <!-- Your circular profile picture --> |
+| ![adejonghm-profile](adejonghm-profile.png){: width="150" height="150"} | ![grucci-profile](grucci-profile.png){: width="150" height="150"} | <!-- Your circular profile picture --> |
 |---|---|
-| **Name:** Alejandro de Jongh <br/> **Contact:** [LinkedIn](https://linkedin.com/in/adejonghm) <br/> **Location:** São Paulo, Brazil <br/> **Occupation:** DevOps & Infra Operations | **Name:** Felipe Grucci <br/> **Contact:** [LinkedIn](https://linkedin.com/in/felipe-grucci-libona) <br/> **Location:** São Paulo, Brazil <br/> **Occupation:**  | <!-- **Name:** "Your name" <br/> **Contact:** "Your contact" <br/> **Location:** "Your actual location" <br/> **Occupation:** "Your occupation" -->|
+| **Name:** Alejandro de Jongh <br/> **Contact:** [LinkedIn](https://linkedin.com/in/adejonghm) <br/> **Location:** São Paulo, Brazil <br/> **Occupation:** DevOps & Infra Operations | **Name:** Felipe Grucci <br/> **Contact:** [LinkedIn](https://linkedin.com/in/felipe-grucci-libona) <br/> **Location:** São Paulo, Brazil <br/> **Occupation:** DevOps & Infra Architect | <!-- **Name:** "Your name" <br/> **Contact:** "Your contact" <br/> **Location:** "Your actual location" <br/> **Occupation:** "Your occupation" -->|
