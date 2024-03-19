@@ -4,16 +4,24 @@
 
 This is the official repository of [Byte Maze](https://bytemaze.github.io/), a website created with the idea of sharing content about technologies, whether about programming languages, software, technologies, cultures, tips, or any other topic related to the world of technology.
 
-I've always been a fan of collaborative work, so if you feel like contributing some technology-related content, choosing a topic, and developing your idea, you're always welcome here.
+We are a group of people who like collaborative work, so if you feel like contributing any content related to technology, choosing a topic, and developing your idea, you are always welcome here.
 
-**Byte Maze** is a static website built with [Jekyll](https://jekyllrb.com/). All content is generated using [Markdown](https://www.markdownguide.org/). To learn more about this lightweight markup language, you can use this [link](https://daringfireball.net/projects/markdown/syntax#blockquote). So, if you dare to collaborate with this project, you must follow these steps:
+**Byte Maze** is a static website built with [Jekyll](https://jekyllrb.com/). All content is generated using [Markdown](https://www.markdownguide.org/). To learn more about this lightweight markup language, you can use this [link](https://daringfireball.net/projects/markdown/syntax#blockquote).
 
-> ATTENTION: All content on this website must be written in English. Texts written in another language will not be accepted.
+<br/>
+
+> :warning: &nbsp; **All content on this website must be written in English. Texts written in another language will not be accepted.**
+
+<br/>
+
+If you dare to collaborate with this project, you must follow these steps:
 
 1. To start, you have to create a new branch from the main branch, with the following name: `doc/document-name`
 2. Add you personal information in the `data/authors.yml` file.
 3. Create a new markdown file inside the `_posts/` folder with the following name: `<publication-date>-<short-name>.md`, and write your article. Learn how to work with this [Jekyll Template](https://chirpy.cotes.page/).
-4. After writing your article, you must submit it through a *Pull Request* to be reviewed and approved.
+4. After writing your article, go to the *Actions* tab and run the *Build-and-Deploy* workflow on your branch to check the **Build** of the website with your changes. The deployment will show you an error, this is normal because it is not possible to deploy the Website to another branch other than the Main one.
+5. After the Build stage finishes successfully, you must submit the article through a *Pull Request* to be reviewed and published.
+6. All commits made must be described with a clear message and follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) message structure.
 
 ### Complete Workflow
 
@@ -52,10 +60,6 @@ To test your changes locally, you must have these packages installed.
 
 If you don't have these packages installed or the versions are not as recommended, please update your packages or install them following these instructions:
 
-### MacOs
-
-Please follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/macos/)
-
 ### Ubuntu
 
 ```sh
@@ -76,6 +80,10 @@ Finally, install Jekyll and Bundler:
 ```sh
 gem install jekyll bundler
 ```
+
+### MacOs
+
+Please follow these instructions: [Link Here](https://jekyllrb.com/docs/installation/macos/)
 
 ### Windows
 
